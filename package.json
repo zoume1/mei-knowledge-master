@@ -1,0 +1,25 @@
+{
+  "name": "vuepress-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-medium-zoom": "^1.8.0",
+    "json2yaml": "^1.1.0",
+    "vuepress": "^1.8.0"
+  },
+  "dependencies": {
+    "chroma-js": "^2.1.1",
+    "core-js": "2.x",
+    "element-ui": "^2.15.14",
+    "gsap": "^3.12.2",
+    "three": "^0.132.2"
+  }
+}
