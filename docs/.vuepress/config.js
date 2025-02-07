@@ -23,7 +23,7 @@ module.exports = {
         ['meta', { name: 'referrer', content: 'no-referrer' }]
     ],
     title: 'myrle的知识空间',
-    base: '/mei-knowledge-master/',
+    base: '/',
     description: '立志不再懒懒散散的小前端的知识库',
     markdown: {
         lineNumbers: true,

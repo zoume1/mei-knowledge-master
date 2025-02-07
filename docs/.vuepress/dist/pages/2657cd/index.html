@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue3+ts框架创建 | myrle的知识空间</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/img/newlogo.ico">
+    <meta name="description" content="立志不再懒懒散散的小前端的知识库">
+    <meta name="referrer" content="no-referrer">
+    
+    <link rel="preload" href="/assets/css/0.styles.b248ba8a.css" as="style"><link rel="preload" href="/assets/js/app.74bb3228.js" as="script"><link rel="preload" href="/assets/js/6.0af0f81f.js" as="script"><link rel="preload" href="/assets/js/4.6bd88305.js" as="script"><link rel="preload" href="/assets/js/57.480e6c5f.js" as="script"><link rel="prefetch" href="/assets/js/1.f99712b6.js"><link rel="prefetch" href="/assets/js/10.c46e55c6.js"><link rel="prefetch" href="/assets/js/11.d172d9ad.js"><link rel="prefetch" href="/assets/js/14.24b515a7.js"><link rel="prefetch" href="/assets/js/15.8cb6dda3.js"><link rel="prefetch" href="/assets/js/16.089da441.js"><link rel="prefetch" href="/assets/js/17.867107bb.js"><link rel="prefetch" href="/assets/js/18.eb284698.js"><link rel="prefetch" href="/assets/js/19.6f81a92e.js"><link rel="prefetch" href="/assets/js/2.e47347a5.js"><link rel="prefetch" href="/assets/js/20.85337c93.js"><link rel="prefetch" href="/assets/js/21.6dddb0d0.js"><link rel="prefetch" href="/assets/js/22.7b60571a.js"><link rel="prefetch" href="/assets/js/23.87ce3d6e.js"><link rel="prefetch" href="/assets/js/24.103aaaf3.js"><link rel="prefetch" href="/assets/js/25.2b97d0d5.js"><link rel="prefetch" href="/assets/js/26.520a8463.js"><link rel="prefetch" href="/assets/js/27.1a770824.js"><link rel="prefetch" href="/assets/js/28.24b97320.js"><link rel="prefetch" href="/assets/js/29.a0e380c5.js"><link rel="prefetch" href="/assets/js/3.c84e8f4f.js"><link rel="prefetch" href="/assets/js/30.11baa248.js"><link rel="prefetch" href="/assets/js/31.8a2891bd.js"><link rel="prefetch" href="/assets/js/32.e2597ceb.js"><link rel="prefetch" href="/assets/js/33.d8af4ebe.js"><link rel="prefetch" href="/assets/js/34.201c3b62.js"><link rel="prefetch" href="/assets/js/35.e1d604b2.js"><link rel="prefetch" href="/assets/js/36.da81ff5c.js"><link rel="prefetch" href="/assets/js/37.7832333f.js"><link rel="prefetch" href="/assets/js/38.49b17fdd.js"><link rel="prefetch" href="/assets/js/39.bed6ed28.js"><link rel="prefetch" href="/assets/js/40.f71b4497.js"><link rel="prefetch" href="/assets/js/41.c9084756.js"><link rel="prefetch" href="/assets/js/42.ed78136c.js"><link rel="prefetch" href="/assets/js/43.3715c00a.js"><link rel="prefetch" href="/assets/js/44.23ed892f.js"><link rel="prefetch" href="/assets/js/45.f59f63cd.js"><link rel="prefetch" href="/assets/js/46.baae5d49.js"><link rel="prefetch" href="/assets/js/47.01b13504.js"><link rel="prefetch" href="/assets/js/48.3d1797e5.js"><link rel="prefetch" href="/assets/js/49.59602e00.js"><link rel="prefetch" href="/assets/js/5.ece49436.js"><link rel="prefetch" href="/assets/js/50.837a05f8.js"><link rel="prefetch" href="/assets/js/51.03a0af39.js"><link rel="prefetch" href="/assets/js/52.3f473824.js"><link rel="prefetch" href="/assets/js/53.bd94e3c0.js"><link rel="prefetch" href="/assets/js/54.71c3f3d1.js"><link rel="prefetch" href="/assets/js/55.ecf5d67d.js"><link rel="prefetch" href="/assets/js/56.83e384a9.js"><link rel="prefetch" href="/assets/js/58.a56c6a0c.js"><link rel="prefetch" href="/assets/js/7.8132e7b3.js"><link rel="prefetch" href="/assets/js/8.28c097b6.js"><link rel="prefetch" href="/assets/js/9.a53d0c93.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.4f017514.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b248ba8a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/home.jpg" alt="myrle的知识空间" class="logo"> <span class="site-name can-hide">myrle的知识空间</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端学习" class="dropdown-title"><span class="title">前端学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端学习" class="mobile-dropdown-title"><span class="title">前端学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/d4575e/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-subitem"><a href="/pages/12e2d5/" class="nav-link">
+  算法&amp;常用方法
+</a></li><li class="dropdown-subitem"><a href="/pages/450a09/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-subitem"><a href="/pages/331c3b/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/pages/a5dbfb/" class="nav-link">
+  现代JavaScript库开发
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/8ea889/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/pages/3ba846/" class="nav-link">
+  vuePress
+</a></li><li class="dropdown-subitem"><a href="/pages/347ae3/" class="nav-link">
+  qiankun微前端
+</a></li><li class="dropdown-subitem"><a href="/pages/2657cd/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  vue3
+</a></li></ul></li><li class="dropdown-item"><h4>
+          webgl学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/7fb7ad/" class="nav-link">
+  threejs
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/pages/cd2a4f/" class="nav-link">
+  零零碎碎
+</a></div><div class="nav-item"><a href="/pages/9d1205/" class="nav-link">
+  随记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><span class="title">索引</span> <span class="arrow down"></span></button> <button type="button" aria-label="索引" class="mobile-dropdown-title"><span class="title">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">
+  归档
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端学习" class="dropdown-title"><span class="title">前端学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端学习" class="mobile-dropdown-title"><span class="title">前端学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/d4575e/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-subitem"><a href="/pages/12e2d5/" class="nav-link">
+  算法&amp;常用方法
+</a></li><li class="dropdown-subitem"><a href="/pages/450a09/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-subitem"><a href="/pages/331c3b/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/pages/a5dbfb/" class="nav-link">
+  现代JavaScript库开发
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/8ea889/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/pages/3ba846/" class="nav-link">
+  vuePress
+</a></li><li class="dropdown-subitem"><a href="/pages/347ae3/" class="nav-link">
+  qiankun微前端
+</a></li><li class="dropdown-subitem"><a href="/pages/2657cd/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  vue3
+</a></li></ul></li><li class="dropdown-item"><h4>
+          webgl学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/7fb7ad/" class="nav-link">
+  threejs
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/pages/cd2a4f/" class="nav-link">
+  零零碎碎
+</a></div><div class="nav-item"><a href="/pages/9d1205/" class="nav-link">
+  随记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><span class="title">索引</span> <span class="arrow down"></span></button> <button type="button" aria-label="索引" class="mobile-dropdown-title"><span class="title">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">
+  归档
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>框架的创建</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/2657cd/" aria-current="page" class="active sidebar-link">vue3+ts框架创建</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/2657cd/#初始化项目" class="sidebar-link">初始化项目</a></li><li class="sidebar-sub-header"><a href="/pages/2657cd/#输入项目名称" class="sidebar-link">输入项目名称</a></li><li class="sidebar-sub-header"><a href="/pages/2657cd/#选择需要的技术" class="sidebar-link">选择需要的技术</a></li><li class="sidebar-sub-header"><a href="/pages/2657cd/#cd进入到项目目录-输入npm-install-安装默认的依赖" class="sidebar-link">cd进入到项目目录，输入npm install，安装默认的依赖</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>框架的使用</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="page-content hasRightNav"><div class="right-nav" data-v-58b0b819></div> <div class="article-title theme-default-content" data-v-fda27140><h1 data-v-fda27140><span class="circle" data-v-fda27140></span>vue3+ts框架创建</h1> <div class="lastUpdatedTime" data-v-fda27140><span class="text" data-v-fda27140>更新时间:</span> 2024-01-24 10:38:33</div></div> <div class="theme-default-content content__default"><h2 id="初始化项目"><a href="#初始化项目" class="header-anchor">#</a> 初始化项目</h2> <p>要创建的文件夹内cmd命令行输入</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm init vite@latest
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="输入项目名称"><a href="#输入项目名称" class="header-anchor">#</a> 输入项目名称</h2> <p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c4995e390b1e4c8bbc76ed55e8393a69~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?" alt="项目名称.png"></p> <h2 id="选择需要的技术"><a href="#选择需要的技术" class="header-anchor">#</a> 选择需要的技术</h2> <p>选择vue +ts的技术栈</p> <h2 id="cd进入到项目目录-输入npm-install-安装默认的依赖"><a href="#cd进入到项目目录-输入npm-install-安装默认的依赖" class="header-anchor">#</a> cd进入到项目目录，输入npm install，安装默认的依赖</h2> <p>运行啥的默认知晓了哈~</p></div> <footer class="page-edit"><!----> <!----></footer></div> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/pages/bc12bd/">
+        框架配置
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.74bb3228.js" defer></script><script src="/assets/js/6.0af0f81f.js" defer></script><script src="/assets/js/4.6bd88305.js" defer></script><script src="/assets/js/57.480e6c5f.js" defer></script>
+  </body>
+</html>

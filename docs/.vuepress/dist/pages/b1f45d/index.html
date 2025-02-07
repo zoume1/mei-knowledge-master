@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>canvas画图片文案和线实践 | myrle的知识空间</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/img/newlogo.ico">
+    <meta name="description" content="立志不再懒懒散散的小前端的知识库">
+    <meta name="referrer" content="no-referrer">
+    
+    <link rel="preload" href="/assets/css/0.styles.b248ba8a.css" as="style"><link rel="preload" href="/assets/js/app.74bb3228.js" as="script"><link rel="preload" href="/assets/js/6.0af0f81f.js" as="script"><link rel="preload" href="/assets/js/4.6bd88305.js" as="script"><link rel="preload" href="/assets/js/52.3f473824.js" as="script"><link rel="prefetch" href="/assets/js/1.f99712b6.js"><link rel="prefetch" href="/assets/js/10.c46e55c6.js"><link rel="prefetch" href="/assets/js/11.d172d9ad.js"><link rel="prefetch" href="/assets/js/14.24b515a7.js"><link rel="prefetch" href="/assets/js/15.8cb6dda3.js"><link rel="prefetch" href="/assets/js/16.089da441.js"><link rel="prefetch" href="/assets/js/17.867107bb.js"><link rel="prefetch" href="/assets/js/18.eb284698.js"><link rel="prefetch" href="/assets/js/19.6f81a92e.js"><link rel="prefetch" href="/assets/js/2.e47347a5.js"><link rel="prefetch" href="/assets/js/20.85337c93.js"><link rel="prefetch" href="/assets/js/21.6dddb0d0.js"><link rel="prefetch" href="/assets/js/22.7b60571a.js"><link rel="prefetch" href="/assets/js/23.87ce3d6e.js"><link rel="prefetch" href="/assets/js/24.103aaaf3.js"><link rel="prefetch" href="/assets/js/25.2b97d0d5.js"><link rel="prefetch" href="/assets/js/26.520a8463.js"><link rel="prefetch" href="/assets/js/27.1a770824.js"><link rel="prefetch" href="/assets/js/28.24b97320.js"><link rel="prefetch" href="/assets/js/29.a0e380c5.js"><link rel="prefetch" href="/assets/js/3.c84e8f4f.js"><link rel="prefetch" href="/assets/js/30.11baa248.js"><link rel="prefetch" href="/assets/js/31.8a2891bd.js"><link rel="prefetch" href="/assets/js/32.e2597ceb.js"><link rel="prefetch" href="/assets/js/33.d8af4ebe.js"><link rel="prefetch" href="/assets/js/34.201c3b62.js"><link rel="prefetch" href="/assets/js/35.e1d604b2.js"><link rel="prefetch" href="/assets/js/36.da81ff5c.js"><link rel="prefetch" href="/assets/js/37.7832333f.js"><link rel="prefetch" href="/assets/js/38.49b17fdd.js"><link rel="prefetch" href="/assets/js/39.bed6ed28.js"><link rel="prefetch" href="/assets/js/40.f71b4497.js"><link rel="prefetch" href="/assets/js/41.c9084756.js"><link rel="prefetch" href="/assets/js/42.ed78136c.js"><link rel="prefetch" href="/assets/js/43.3715c00a.js"><link rel="prefetch" href="/assets/js/44.23ed892f.js"><link rel="prefetch" href="/assets/js/45.f59f63cd.js"><link rel="prefetch" href="/assets/js/46.baae5d49.js"><link rel="prefetch" href="/assets/js/47.01b13504.js"><link rel="prefetch" href="/assets/js/48.3d1797e5.js"><link rel="prefetch" href="/assets/js/49.59602e00.js"><link rel="prefetch" href="/assets/js/5.ece49436.js"><link rel="prefetch" href="/assets/js/50.837a05f8.js"><link rel="prefetch" href="/assets/js/51.03a0af39.js"><link rel="prefetch" href="/assets/js/53.bd94e3c0.js"><link rel="prefetch" href="/assets/js/54.71c3f3d1.js"><link rel="prefetch" href="/assets/js/55.ecf5d67d.js"><link rel="prefetch" href="/assets/js/56.83e384a9.js"><link rel="prefetch" href="/assets/js/57.480e6c5f.js"><link rel="prefetch" href="/assets/js/58.a56c6a0c.js"><link rel="prefetch" href="/assets/js/7.8132e7b3.js"><link rel="prefetch" href="/assets/js/8.28c097b6.js"><link rel="prefetch" href="/assets/js/9.a53d0c93.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.4f017514.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b248ba8a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/home.jpg" alt="myrle的知识空间" class="logo"> <span class="site-name can-hide">myrle的知识空间</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端学习" class="dropdown-title"><span class="title">前端学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端学习" class="mobile-dropdown-title"><span class="title">前端学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/d4575e/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-subitem"><a href="/pages/12e2d5/" class="nav-link">
+  算法&amp;常用方法
+</a></li><li class="dropdown-subitem"><a href="/pages/450a09/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-subitem"><a href="/pages/331c3b/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/pages/a5dbfb/" class="nav-link">
+  现代JavaScript库开发
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/8ea889/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/pages/3ba846/" class="nav-link">
+  vuePress
+</a></li><li class="dropdown-subitem"><a href="/pages/347ae3/" class="nav-link">
+  qiankun微前端
+</a></li><li class="dropdown-subitem"><a href="/pages/2657cd/" class="nav-link">
+  vue3
+</a></li></ul></li><li class="dropdown-item"><h4>
+          webgl学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/7fb7ad/" class="nav-link">
+  threejs
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/pages/cd2a4f/" class="nav-link">
+  零零碎碎
+</a></div><div class="nav-item"><a href="/pages/9d1205/" class="nav-link">
+  随记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><span class="title">索引</span> <span class="arrow down"></span></button> <button type="button" aria-label="索引" class="mobile-dropdown-title"><span class="title">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">
+  归档
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端学习" class="dropdown-title"><span class="title">前端学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端学习" class="mobile-dropdown-title"><span class="title">前端学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/d4575e/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-subitem"><a href="/pages/12e2d5/" class="nav-link">
+  算法&amp;常用方法
+</a></li><li class="dropdown-subitem"><a href="/pages/450a09/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-subitem"><a href="/pages/331c3b/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/pages/a5dbfb/" class="nav-link">
+  现代JavaScript库开发
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/8ea889/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/pages/3ba846/" class="nav-link">
+  vuePress
+</a></li><li class="dropdown-subitem"><a href="/pages/347ae3/" class="nav-link">
+  qiankun微前端
+</a></li><li class="dropdown-subitem"><a href="/pages/2657cd/" class="nav-link">
+  vue3
+</a></li></ul></li><li class="dropdown-item"><h4>
+          webgl学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/7fb7ad/" class="nav-link">
+  threejs
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/pages/cd2a4f/" class="nav-link">
+  零零碎碎
+</a></div><div class="nav-item"><a href="/pages/9d1205/" class="nav-link">
+  随记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><span class="title">索引</span> <span class="arrow down"></span></button> <button type="button" aria-label="索引" class="mobile-dropdown-title"><span class="title">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">
+  归档
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/pages/d4575e/" class="sidebar-link">canvas的理论和实践</a></li><li><a href="/pages/b1f45d/" aria-current="page" class="active sidebar-link">canvas画图片文案和线实践</a><ul class="sidebar-sub-headers"></ul></li></ul> </aside> <main class="page"> <div class="page-content hasRightNav"><div class="right-nav" data-v-58b0b819></div> <div class="article-title theme-default-content" data-v-fda27140><h1 data-v-fda27140><span class="circle" data-v-fda27140></span>canvas画图片文案和线实践</h1> <div class="lastUpdatedTime" data-v-fda27140><span class="text" data-v-fda27140>更新时间:</span> 2024-06-21 10:45:55</div></div> <div class="theme-default-content content__default" data-v-379808a4 data-v-379808a4><h3 id="canvansapi" data-v-379808a4><a href="#canvansapi" class="header-anchor" data-v-379808a4>#</a> canvansapi</h3> <p data-v-379808a4>https://www.canvasapi.cn/CanvasRenderingContext2D/canvas</p> <h3 id="canvans画图片和旋转图片" data-v-379808a4><a href="#canvans画图片和旋转图片" class="header-anchor" data-v-379808a4>#</a> canvans画图片和旋转图片</h3> <div class="language-图片图片加载以及旋转详细代码 line-numbers-mode" data-v-379808a4><pre class="language-text" data-v-379808a4><code data-v-379808a4>        let canvas = this.$refs.canvas
+        let context = canvas.getContext('2d')
+        // 加载图片
+        let img = new Image();
+        img.src = '/img/home.jpg'
+        img.onload = ()=&gt; {
+          let imgWidth = canvas.width * 0.4;
+          let imgHeight = imgWidth * (img.height / img.width)
+          // 绘制图片到canvas，大小和位置都可以自定义
+          context.drawImage(img, 0, 0, imgWidth, imgHeight);
+          // 旋转
+          // 1.保存当前状态
+          context.save()
+          // 2将中心点偏移到当前需要偏移的图片旋转点
+          context.translate(canvas.width -imgWidth*0.5, canvas.height -imgHeight*0.5)
+          let deg = 45
+          // 3.旋转角度
+          context.rotate(deg * Math.PI / 180)
+          context.drawImage(img, -imgWidth*0.5 , -imgHeight*0.5, imgWidth, imgHeight);
+          // 恢复之前状态
+          context.restore()
+
+        }
+</code></pre> <div class="line-numbers-wrapper" data-v-379808a4><span class="line-number" data-v-379808a4>1</span><br data-v-379808a4><span class="line-number" data-v-379808a4>2</span><br data-v-379808a4><span class="line-number" data-v-379808a4>3</span><br data-v-379808a4><span class="line-number" data-v-379808a4>4</span><br data-v-379808a4><span class="line-number" data-v-379808a4>5</span><br data-v-379808a4><span class="line-number" data-v-379808a4>6</span><br data-v-379808a4><span class="line-number" data-v-379808a4>7</span><br data-v-379808a4><span class="line-number" data-v-379808a4>8</span><br data-v-379808a4><span class="line-number" data-v-379808a4>9</span><br data-v-379808a4><span class="line-number" data-v-379808a4>10</span><br data-v-379808a4><span class="line-number" data-v-379808a4>11</span><br data-v-379808a4><span class="line-number" data-v-379808a4>12</span><br data-v-379808a4><span class="line-number" data-v-379808a4>13</span><br data-v-379808a4><span class="line-number" data-v-379808a4>14</span><br data-v-379808a4><span class="line-number" data-v-379808a4>15</span><br data-v-379808a4><span class="line-number" data-v-379808a4>16</span><br data-v-379808a4><span class="line-number" data-v-379808a4>17</span><br data-v-379808a4><span class="line-number" data-v-379808a4>18</span><br data-v-379808a4><span class="line-number" data-v-379808a4>19</span><br data-v-379808a4><span class="line-number" data-v-379808a4>20</span><br data-v-379808a4><span class="line-number" data-v-379808a4>21</span><br data-v-379808a4><span class="line-number" data-v-379808a4>22</span><br data-v-379808a4><span class="line-number" data-v-379808a4>23</span><br data-v-379808a4></div></div><h3 id="canvans-画虚线" data-v-379808a4><a href="#canvans-画虚线" class="header-anchor" data-v-379808a4>#</a> canvans 画虚线</h3> <div class="language-线条详细代码 line-numbers-mode" data-v-379808a4><pre class="language-text" data-v-379808a4><code data-v-379808a4>      context.lineWidth = 1; //虚线高度
+      context.strokeStyle = '#000'; // 虚线颜色
+      context.beginPath();
+      context.setLineDash([5, 5]);   //代表线条实线和透明
+      context.moveTo(imgWidth * 0.5, imgHeight * 0.5 + 4);
+      context.lineTo(canvas.width-imgWidth * 0.5, canvas.height -imgHeight* 0.5 + 4);
+      // context.lineCap = &quot;round&quot;;  //设置端点形状  buff 默认无效果  round 圆形端点  square 方形
+      // context.lineJoin = &quot;bevel&quot;; //设置线条拐点的样式，三个取值  round、bevel、miter
+      context.stroke();
+</code></pre> <div class="line-numbers-wrapper" data-v-379808a4><span class="line-number" data-v-379808a4>1</span><br data-v-379808a4><span class="line-number" data-v-379808a4>2</span><br data-v-379808a4><span class="line-number" data-v-379808a4>3</span><br data-v-379808a4><span class="line-number" data-v-379808a4>4</span><br data-v-379808a4><span class="line-number" data-v-379808a4>5</span><br data-v-379808a4><span class="line-number" data-v-379808a4>6</span><br data-v-379808a4><span class="line-number" data-v-379808a4>7</span><br data-v-379808a4><span class="line-number" data-v-379808a4>8</span><br data-v-379808a4><span class="line-number" data-v-379808a4>9</span><br data-v-379808a4></div></div><h3 id="canvans-画文字" data-v-379808a4><a href="#canvans-画文字" class="header-anchor" data-v-379808a4>#</a> canvans 画文字</h3> <div class="language-文字详细代码 line-numbers-mode" data-v-379808a4><pre class="language-text" data-v-379808a4><code data-v-379808a4>      context.fillStyle = &quot;#000&quot;;
+      context.font = 'bold 24px SimSun, Songti SC';
+      context.fillText('24px的宋体呈现', 300, 50);
+</code></pre> <div class="line-numbers-wrapper" data-v-379808a4><span class="line-number" data-v-379808a4>1</span><br data-v-379808a4><span class="line-number" data-v-379808a4>2</span><br data-v-379808a4><span class="line-number" data-v-379808a4>3</span><br data-v-379808a4></div></div><canvas width="800" height="600" data-v-379808a4></canvas></div> <footer class="page-edit"><!----> <!----></footer></div> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/d4575e/" class="prev">
+        canvas的理论和实践
+      </a></span> <!----></p></div>  <!----></main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.74bb3228.js" defer></script><script src="/assets/js/6.0af0f81f.js" defer></script><script src="/assets/js/4.6bd88305.js" defer></script><script src="/assets/js/52.3f473824.js" defer></script>
+  </body>
+</html>
