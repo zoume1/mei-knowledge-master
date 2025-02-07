@@ -5,7 +5,7 @@ set -e
 cd docs/.vuepress/dist # 进入生成的文件夹
 
 # deploy to github
-echo 'zoume1.github.io/mei-knowledge-master' > CNAME
+# echo 'zoume1.github.io/mei-knowledge-master' > CNAME
 # if [ -z "$GITHUB_TOKEN" ]; then
 #   msg='deploy'
 #   githubUrl=git@github.com:zoume1/mei-knowledge-master.git
