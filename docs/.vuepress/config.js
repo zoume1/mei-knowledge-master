@@ -56,7 +56,7 @@ module.exports = {
                         items: [
                             // {text:'vue',link:'/vue/lesson1'},
                             { text: 'react', link: '/pages/8ea889/' },
-                            { text: 'vuePress', link: '/pages/3ba846/' },
+                            { text: 'vuepress', link: '/pages/d8e026/' },
                             { text: 'qiankun微前端', link: '/pages/347ae3/' },
                             { text: 'vue3', link: '/pages/2657cd/' }
                         ]
@@ -69,7 +69,7 @@ module.exports = {
                     }
                 ]
             },
-            { text: '零零碎碎', link: '/pages/cd2a4f/' },
+            { text: '零零碎碎', link: '/pages/9fae8c/' },
             { text: '随记', link: '/pages/9d1205/' },
             {
                 text: '索引',
