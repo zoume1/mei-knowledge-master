@@ -48,7 +48,8 @@ module.exports = {
                             { text: '算法&常用方法', link: '/pages/12e2d5/' },
                             { text: 'TypeScript', link: '/pages/450a09/' },
                             { text: 'css', link: '/pages/331c3b/' },
-                            { text: '现代JavaScript库开发', link: '/pages/a5dbfb/' }
+                            { text: '现代JavaScript库开发', link: '/pages/a5dbfb/' },
+                            { text: 'node.js', link: '/pages/ac07eb/' }
                         ]
                     },
                     {
