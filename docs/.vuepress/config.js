@@ -49,7 +49,7 @@ module.exports = {
                             { text: 'TypeScript', link: '/pages/450a09/' },
                             { text: 'css', link: '/pages/331c3b/' },
                             { text: '现代JavaScript库开发', link: '/pages/a5dbfb/' },
-                            { text: 'node.js', link: '/pages/ac07eb/' }
+                           
                         ]
                     },
                     {
@@ -69,6 +69,13 @@ module.exports = {
                         ]
                     }
                 ]
+            },
+            { text: '后端学习', 
+                   items: [
+                     {text:'python',link:'/pages/418df2/'},
+                      { text: 'node.js', link: '/pages/ac07eb/' }
+                ]
+                    
             },
             { text: '零零碎碎', link: '/pages/9fae8c/' },
             { text: '随记', link: '/pages/9d1205/' },
