@@ -70,6 +70,12 @@ module.exports = {
                     }
                 ]
             },
+            { text: 'AI学习', 
+                   items: [
+                    {text:'搭建个人知识库',link:'/pages/e0a823/'},
+                ]
+                    
+            },
             { text: '后端学习', 
                    items: [
                      {text:'python',link:'/pages/418df2/'},
